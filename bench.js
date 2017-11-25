@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 
-var WeakMap = require("./weak-map");
+var WeakMap = require("weak-map/weak-map");
 
 var keys = [];
 for (var i = 0; i < 1000; i++) {
@@ -41,3 +42,5 @@ suite("WeakMap", function () {
     });
 });
 
+
+return module.exports;});

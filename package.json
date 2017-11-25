@@ -32,5 +32,13 @@
   },
   "devDependencies": {
     "jasminum": ">=2.0.2 <3.0.0"
+  },
+  "wilton": {
+    "excludes": [
+        "test",
+        "bench.js",
+        "sync",
+        "sync.patch"
+    ]
   }
 }

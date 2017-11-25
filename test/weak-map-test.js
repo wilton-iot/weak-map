@@ -1,5 +1,8 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 
-var WeakMap = require("../weak-map");
+var WeakMap = require("weak-map");
+var expect = require("tape-compat").expect;
+var it = require("tape-compat").it;
 
 var weakMap = new WeakMap();
 var p = Object.freeze({});
@@ -69,3 +72,5 @@ it("set returns self", function () {
     expect(weakMap.set({}, 10)).toBe(weakMap);
 });
 
+
+return module.exports;});
