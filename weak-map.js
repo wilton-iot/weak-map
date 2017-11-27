@@ -137,7 +137,7 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
   if (typeof WeakMap === 'function') {
     var HostWeakMap = WeakMap;
     // There is a WeakMap -- is it good enough?
-    if (typeof navigator !== 'undefined' &&
+    if (typeof navigator !== 'undefined' && null !== navigator &&
         /Firefox/.test(navigator.userAgent)) {
       // We're now *assuming not*, because as of this writing (2013-05-06)
       // Firefox's WeakMaps have a miscellany of objects they won't accept, and
