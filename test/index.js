@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 
 var Suite = require("jasminum");
 var WeakMap = require("weak-map/weak-map");
@@ -11,4 +11,4 @@ var suite = new Suite(name).describe(function () {
 suite.runAndReport().done();
 
 
-return module.exports;});
+require = requireOrig;});
